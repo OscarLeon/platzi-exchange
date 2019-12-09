@@ -5,10 +5,13 @@
         <div class="flex items-center flex-shrink-0 text-white mr-6">
           <PxIcon class="mr-2" />
           <router-link
-            :to="{name: 'home'}"
+            :to="{ name: 'home' }"
             class="font-semibold text-xl tracking-tight"
-          >Platzi Exchange</router-link>
-          <div class="hidden sm:block w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+            >Platzi Exchange</router-link
+          >
+          <div
+            class="hidden sm:block w-full block flex-grow lg:flex lg:items-center lg:w-auto"
+          >
             <div class="text-sm lg:flex-grow"></div>
           </div>
         </div>

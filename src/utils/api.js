@@ -26,5 +26,7 @@ function getAssetHistory(coin) {
 }
 
 export default {
-  getAssets, getAsset, getAssetHistory
+  getAssets,
+  getAsset,
+  getAssetHistory
 }
