@@ -3,13 +3,27 @@
     @click="buttonClick"
     class="bg-transparent hover:bg-green-500 text-green-700 font-semibold hover:text-white py-2 px-2 border border-green-500 hover:border-transparent rounded"
   >
-    <slot></slot>
+    <BeatLoader :loading="isLoading" :color="'#68d391'" :size="'8px'" />
+    <p v-show="!isLoading">
+      <slot></slot>
+    </p>
   </button>
 </template>
 
 <script>
+import BeatLoader from 'vue-spinner/src/BeatLoader'
+
 export default {
   name: 'PxButton',
+
+  components: { BeatLoader },
+
+  props: {
+    isLoading: {
+      type: Boolean,
+      default: false
+    }
+  },
 
   methods: {
     buttonClick() {
