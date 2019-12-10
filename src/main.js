@@ -7,6 +7,10 @@ import Chart from 'chart.js'
 import router from '@/router/index.js'
 import { dollarFilter, percentFilter } from '@/utils/filters'
 
+import VueMeta from 'vue-meta'
+
+Vue.use(VueMeta)
+
 Vue.use(Chartkick.use(Chart))
 
 Vue.filter('dollar', dollarFilter)

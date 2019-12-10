@@ -122,6 +122,10 @@ export default {
 
   components: { PxButton, BounceLoader },
 
+  metaInfo: {
+    title: 'Detail Coin 😜'
+  },
+
   data() {
     return {
       isLoading: false,

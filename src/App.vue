@@ -11,6 +11,9 @@ import PxHeader from '@/components/PxHeader'
 export default {
   name: 'app',
   components: { PxHeader },
+  metaInfo: {
+    title: 'Platzi Exchange 💹'
+  },
 
   data() {
     return {
